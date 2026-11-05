@@ -1,0 +1,29 @@
+[project]
+name = "langchain-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Gnanasagar", email = "sagar967636@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ddgs>=9.16.1",
+    "google-genai>=2.34.0",
+    "langchain>=1.4.7",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.7.1",
+    "langchain-google-genai>=4.4.2",
+    "python-dotenv>=1.2.4",
+    "sqlalchemy>=2.1.8",
+    "wikipedia>=1.4.0",
+]
+
+[project.scripts]
+langchain = "langchain:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+[tool.uv]
+package = false
